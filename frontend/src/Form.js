@@ -23,7 +23,7 @@ function Form() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    axios.post('http://127.0.0.1:5000/predict', formData, {
+    axios.post('https://crop-prediction-model1-api.onrender.com/predict', formData, {
       headers: {
         'Content-Type': 'application/json'
       }
